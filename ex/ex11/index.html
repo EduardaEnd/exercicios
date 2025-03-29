@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png"
+        type="image/png">
+        <img src="imagens/fotog.png" alt="Imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audios em html5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/A Starry Message - Dan _Lebo_ Lebowitz, Tone Seeker.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir audio</p>
+        <a href="midia/A Starry Message - Dan _Lebo_ Lebowitz, Tone Seeker.mp3"> Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+    <hr>
+    <video src="midia/13052885_1906_1080_30fps.mp4" width="600" poster="imagens/capadevideo.webp" controls loop>
+    <p>Infelizmente seu navegador não é compativel com mp4</p>
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/au30Dogtj-I?si=rUVlax--myo1J1iP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>
