@@ -1,0 +1,18 @@
+body{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: rgb(27, 21, 21);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(5, 58, 5);
+    color: aliceblue;
+} /* em html é id = em css é #
+    em html é class = em css é .*/
+
+h2{
+    color: darkslategrey;
+}
