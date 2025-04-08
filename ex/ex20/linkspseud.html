@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+
+        /* 
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren (o filho)
+        */
+        a{
+            color: rebeccapurple;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #9f5edb;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        .especial::before{
+            content: '->';
+        }
+        .especial::after{
+            content: '<-';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="../ex2ParagrafEemoji/index.html" target="_blank" class="especial">Site 1</a></li> <!--Nao visitado-->
+        <li><a href="exemhover.html">Site 2</a></li>
+        <li><a href="index.html">Site 3</a></li>
+    </ul>
+</body>
+</html>
