@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando conteiners</title>
+    <style>
+        body{
+            display: flexbox;
+            justify-content: center;
+            background-color: #8080802f;
+            width: 100%;
+            margin: 0;
+        }
+
+        #principal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00000081;
+            height: 280px;
+            
+        }
+        .quadrado{
+            display: inline-block;
+            background-color: #7f96ff;
+            width: 150px;
+            height: 150px;
+            border: 8px;
+            border-radius: 20px;
+            margin: 8px;
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #q2{
+            width: 180px;
+            height: 180px;
+            
+        }
+
+        .quadrado:hover{
+            background-color: #404c81;
+            box-shadow: 0px 0px 7px #00000083;
+            transform: scale(1.2);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="quadrado" id="q1">
+
+        </div>
+
+        <div class="quadrado" id="q2">
+
+        </div>
+
+        <div class="quadrado" id="q3">
+
+        </div>
+    </div>
+</body>
+</html>
