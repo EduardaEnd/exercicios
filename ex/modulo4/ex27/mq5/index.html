@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="styleMedia-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burger" class="material-symbols-outlined" onclick="clicliMenu()">menu</i>
@@ -40,6 +40,14 @@
                 itens.style.display ='none'
             } else{
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if (window.innerwidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
             }
         }
     </script>
