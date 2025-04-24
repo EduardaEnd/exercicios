@@ -1,0 +1,55 @@
+
+
+/* Typical device  breakpoints
+pequenas telas: aate 600px
+celular: 600px ate 768px 
+tablet: 768px ate 992px
+desktop: 992px ate 1200px
+grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+
+    #login{
+        width: 80vw;
+    }
+
+    #imagem{
+        background-image: url(../imagens/pexels-tomas-malik-793526-25929086.jpg);
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    #formulario{
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #login{
+        width: 980px;
+    }
+
+    #imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario{
+        float: right;
+        width: 50%;
+    }
+
+    #formulario > h1{
+        font-size: 2em;
+    }
+
+    #formulario > p{
+        font-size: 1.2em;
+    }
+
+}

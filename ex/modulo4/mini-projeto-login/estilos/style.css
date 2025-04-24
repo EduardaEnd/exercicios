@@ -6,10 +6,13 @@ verde escuro: 186951
 
 *{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: #186951;
+    background-image: linear-gradient( to top, #579f77, #186951);
     height: 100vh;
     width: 100vw;
 }
@@ -24,13 +27,16 @@ main{
     background-color: white;
     position: absolute;
     left: 50%;
-    right: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #1d352855;
     overflow: hidden; /*tudo que tiver fora da borda fica escondido*/
+
+    transition: width .6s, height .6s;
+    transition-timing-function: ease;
 }
 #imagem{
     display: block;
@@ -43,4 +49,13 @@ main{
 #formulario{
     display: block;
     padding: 10px;
+}
+
+#formulario >h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p{
+    font-size: 0.8em;
 }
