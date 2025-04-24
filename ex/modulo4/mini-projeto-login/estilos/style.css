@@ -28,7 +28,7 @@ main{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    
     width: 255px;
     height: 515px;
     border-radius: 20px;
@@ -36,6 +36,7 @@ main{
     overflow: hidden; /*tudo que tiver fora da borda fica escondido*/
 
     transition: width .6s, height .6s;
+    transform: translate(-50%, -50%);
     transition-timing-function: ease;
 }
 #imagem{
@@ -62,16 +63,44 @@ main{
 
 .campo{
     background-color: #186951a9;
+    border: 2px solid #186951a9;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 .campo > label{
     display: none;
 }
+
+i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+input{
+    background-color: #dfdadc42;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    
+    margin-bottom: 5px;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    
+    transform: translateY(-12px);
+}
+
+input:focus-within{
+    background-color: #7ce2aaa9;
+    border: none;
+}
+
 form > input[type=submit]{
     display: block;
     font-size: 1em;

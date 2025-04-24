@@ -50,6 +50,7 @@ grandes telas: acima de 1200px
 
     #formulario > p{
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 
 }
