@@ -26,6 +26,12 @@ grandes telas: acima de 1200px
         width: 60%;
         height: 100%;
     }
+
+    input{
+        width: 88%;
+    }
+    
+    
 }
 
 @media screen and (min-width: 992px){
@@ -53,4 +59,9 @@ grandes telas: acima de 1200px
         margin: 20px 0px;
     }
 
+    input{
+        width: 91%;
+        height: 90%;
+        margin-top: 14px;
+    }
 }
