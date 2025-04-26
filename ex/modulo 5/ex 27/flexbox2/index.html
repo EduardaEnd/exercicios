@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            display: flex;
+            flex-direction: column; /*DIreção e formato de coluna*/
+            /*
+            flex-direction: column-reverse; Direçao de coluna invertida
+            flex-direction: row; padrao ->
+            flex-direction: row-reverse; reta reversa <-
+            main-axis a largura do conteiner no modo row
+            cross-axis o comprimento do conteiner no modo 
+            main-axis a parte maior da coluna, agora o comprimento
+            cross-axis a parte menor da coluna, agora a largura
+            eixo principal é como uma linha no meio do do conteiner no main-axis
+            eixo transversal é o meio de cada item filho no cross-axis
+            */
+        }
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
