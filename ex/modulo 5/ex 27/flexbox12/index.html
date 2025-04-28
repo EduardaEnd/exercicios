@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .conteiner{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-shrink: 1;
+            flex-grow: 1;
+        
+        }
+
+        /*
+        Flex: initial (padrao, que sem ele contina o padrao inicial)
+        flex: 0 0 auto//none (Deixa nao flexivel, rigido, parado)
+        Flex: 1 1 auto//Auto (Completamente flexivel)
+        Flex: (Qualquer numero) = Flex 3 1 auto(So vai mexer com o grow)
+        */
+        #c1{
+            /*
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;*/
+
+            flex: 1 0 200px;
+        }
+
+        #c2{
+            /*
+            flex-grow: 1;/*crescer
+            flex-shrink: 1;/*diminuir
+            flex-basis: 200px;*/
+            flex: 1 1 150px;
+        }
+
+        #c3{
+            flex-grow: 1;
+            flex-shrink: 8;
+            flex-basis: 200px;
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="c1">A</div>
+        <div class="item" id="c2">B</div>
+        <div class="item" id="c3">C</div>
+        
+    </div>
+</body>
+</html>
