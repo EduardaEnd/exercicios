@@ -1,0 +1,29 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height:1.5em ;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.normal{
+    padding: 20px;
+}
+
+.flex-content{
+    background-color: lightcoral;
+    padding: 20px;
+}
