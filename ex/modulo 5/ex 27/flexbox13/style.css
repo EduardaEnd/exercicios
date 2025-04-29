@@ -17,14 +17,24 @@ header{
     background-color: lightcoral;
     color: black;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1{
-    border: 1px dashed black;
+    /*border: 1px dashed black;*/
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.137);
 }
 
 nav{
-    border: 1px dashed black;
+    /*border: 1px dashed black;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 a{
@@ -40,6 +50,7 @@ a{
 a:hover{
     background-color: black;
     color: lightsalmon;
+    transition: background-color .5s;
 }
 
 main{
