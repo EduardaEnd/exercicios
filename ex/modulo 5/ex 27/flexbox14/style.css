@@ -9,14 +9,19 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    line-height:1.5em ;
-    width: 100vw;
-    height: 100vh;
+    line-height:1.5em;
+    background-color: #8f5b2a9c;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 h1, h2{
-    margin-bottom: 10px;
-    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: left;
 }
 
 .normal{
@@ -24,6 +29,42 @@ h1, h2{
 }
 
 .flex-content{
-    background-color: lightcoral;
+    background-color: #686544;
     padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+.text{
+    flex: 1 1 500px;
+}
+
+.media{
+    flex: 1 0 400px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
 }
