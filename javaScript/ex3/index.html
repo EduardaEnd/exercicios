@@ -15,9 +15,11 @@
     <h1>Hello world!! </h1>
 
     <script>
-        window.alert('Minha primeira mensagem!')/*mensagem de alerta*/
-        window.confirm('Está gostando do JS? ') /*mensagem de confirmação*/
-        window.prompt('Qual é seu nome?')/*inserir o nome*/
+        var n1 = Number(window.prompt('Digite um numero: ')) //sem o parse... o prompt vai considerar qualquer escrita inserida como string
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`/*passa numero para */)
+
     </script>
 </body>
 </html>
